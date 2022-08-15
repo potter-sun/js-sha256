@@ -80,8 +80,8 @@
   };
 
   var nodeWrap = function (method, is224) {
-    var crypto = eval("require('crypto')");
-    var Buffer = eval("require('buffer').Buffer");
+    var crypto = require('crypto');
+    var Buffer = require('buffer').Buffer;
     var algorithm = is224 ? 'sha224' : 'sha256';
     var nodeMethod = function (message) {
       if (typeof message === 'string') {
